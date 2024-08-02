@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Messages</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Messages</h1>
+    <div class="message-wrapper">
+      <% messages.forEach(message => { %>
+      <h2><%= message.user %></h2>
+      <p class="text"><%= message.text %></p>
+      <p class="added"><%= message.added %></p>
+      <% }) %>
+    </div>
+
+    <a href="/newMessage"><button>New Message</button></a>
+  </body>
+</html>
